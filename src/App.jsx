@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -6,7 +7,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 
-function App() {
+function App({ title }) {
   const routes = createBrowserRouter([
     {
       path: "/",
